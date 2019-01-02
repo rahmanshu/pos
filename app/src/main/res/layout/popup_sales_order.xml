@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg_round_white"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            >
+
+
+            <TextView
+                android:id="@+id/textAddCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Item"
+                android:padding="16dp"
+                android:background="@color/gray_line"
+                android:textColor="@color/blue_salesforce"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/labelItemName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="Item Name"
+                android:layout_marginTop="16dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_border_style"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                >
+
+                <Spinner
+                    android:id="@+id/spinnerItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/labelQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="Quantity"
+                />
+
+            <EditText
+                android:id="@+id/editQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:padding="12dp"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/labelUom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="Uom"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_border_style"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                >
+
+                <Spinner
+                    android:id="@+id/spinnerUom"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/labelPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="Price"
+                />
+
+            <EditText
+                android:id="@+id/editPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:padding="12dp"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/labelTax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="Tax"
+                />
+
+            <EditText
+                android:id="@+id/editTaxItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:padding="12dp"
+                />
+
+            <TextView
+                android:id="@+id/labelDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="Discount"
+                />
+
+            <EditText
+                android:id="@+id/editDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:padding="12dp"
+                android:inputType="number"
+                />
+
+
+            <TextView
+                android:id="@+id/labelTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="Total"
+                />
+
+
+            <EditText
+                android:id="@+id/editTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:padding="12dp"
+                android:inputType="number"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/btnCancelItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cancel"
+                    android:background="@drawable/bg_round_button_blue"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    />
+
+                <Button
+                    android:id="@+id/btnSaveItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Save"
+                    android:background="@drawable/bg_round_button_blue"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_line"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/labelFootnote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Setting Footnote"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/gray_highlight"></View>
+
+
+        <TextView
+            android:id="@+id/textFootnote"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_round_white"
+            android:padding="16dp" />
+
+
+        <Button
+            android:id="@+id/buttonAddFootnote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_rectangle_button_red"
+            android:padding="8dp"
+            android:text="Set Footnote"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

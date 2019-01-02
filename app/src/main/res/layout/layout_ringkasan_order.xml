@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- nomer order & total-->
+    <!-- end nomer order-->
+
+
+    <LinearLayout
+        android:id="@+id/layoutGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/btnHapus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="HAPUS"
+            android:background="@drawable/bg_rectangle_button_red"
+            android:textColor="@color/white"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            />
+
+        <Button
+            android:id="@+id/btnHold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hold"
+            android:background="@drawable/bg_rectangle_blue_light"
+            android:textColor="@color/white"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            />
+
+        <Button
+            android:id="@+id/btnBayar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BAYAR"
+            android:background="@drawable/bg_rectangle_button_green"
+            android:textColor="@color/white"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_nomerOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/blue_light"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:layout_marginLeft="8dp"
+                />
+
+            <TextView
+                android:id="@+id/textTotalBayar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rp 0"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:padding="4dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listRingkasanOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutPajak"
+        android:layout_below="@+id/layout_nomerOrder"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </android.support.v7.widget.RecyclerView>
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_sidebar_menu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/layoutPajak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/layoutGroup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discount Item"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:layout_marginLeft="16dp"
+                />
+
+            <TextView
+                android:id="@+id/textDiscountItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rp 0"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:layout_marginRight="16dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tax"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:layout_marginLeft="16dp"
+                />
+
+            <TextView
+                android:id="@+id/textPajakTerbayar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rp 0"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:layout_marginRight="16dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sub Total"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:layout_marginLeft="16dp"
+                />
+
+            <TextView
+                android:id="@+id/textSubTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rp 0"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:layout_marginRight="16dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

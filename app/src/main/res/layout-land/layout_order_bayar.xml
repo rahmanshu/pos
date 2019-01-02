@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_sidebar_menu_split_bill"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:padding="8dp"
+                            android:text="NON TUNAI"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/shape_border_style">
+
+                            <Spinner
+                                android:id="@+id/spinnerMetodeBayar"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/shape_border_style">
+
+                            <Spinner
+                                android:id="@+id/spinnerBank"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp" />
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/textNomerKartu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/bg_round_white"
+                            android:hint="Input Nomer Kartu"
+                            android:inputType="number"
+                            android:padding="16dp" />
+
+                        <EditText
+                            android:id="@+id/textNominalNonTunai"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/bg_round_white"
+                            android:hint="Input Nominal"
+                            android:inputType="number"
+                            android:padding="16dp" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:padding="8dp"
+                            android:text="MEMBER"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:orientation="horizontal">
+
+
+                            <EditText
+                                android:id="@+id/textMemberId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_round_white"
+                                android:hint="Input Member ID"
+                                android:padding="16dp" />
+
+
+                            <Button
+                                android:id="@+id/btnCekMember"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_rectangle_button_red"
+                                android:text="Cek Member"
+                                android:textColor="@color/white" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/textDataMember"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_round_white"
+                                android:hint="Input Member ID"
+                                android:padding="16dp" />
+
+                            <TextView
+                                android:id="@+id/textDataPoint"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_round_white"
+                                android:hint="0"
+                                android:padding="16dp" />
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/textNominalPoint"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/bg_round_white"
+                            android:hint="Nominal Point"
+                            android:padding="16dp"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/textInputNominalPoint"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/bg_round_white"
+                            android:hint="Input Nominal"
+                            android:inputType="numberDecimal"
+                            android:padding="16dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/gray_line"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/font_color_salesforce"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/labelTotalBayar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="Total Bayar"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+
+                            />
+
+
+                        <TextView
+                            android:id="@+id/textTotalBayar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="16dp"
+                            android:text="Rp 0"
+                            android:textColor="@color/white"
+                            android:textSize="24dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="8dp"
+                        android:text="TUNAI"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/textNominalTunai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/bg_round_white"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:padding="8dp"
+                        android:textAlignment="center"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="8dp"
+                        android:text="KEMBALIAN"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/textNominalKembalian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/bg_round_white"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:padding="8dp"
+                        android:textAlignment="center"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="8dp"
+                        android:text="PPN"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/shape_border_style">
+
+                        <Spinner
+                            android:id="@+id/spinnerPpn"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="8dp"
+                        android:text="DONASI"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/textNominalDonasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/bg_round_white"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:textSize="30dp"
+                        android:padding="8dp" />
+
+                    <Button
+                        android:id="@+id/btnBayar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/bg_rectangle_blue_light"
+                        android:text="Bayar"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+

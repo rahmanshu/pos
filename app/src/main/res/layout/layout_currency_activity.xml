@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_menu"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_medium"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+
+
+            <TextView
+                android:id="@+id/textAddCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Information"
+                android:padding="16dp"
+                android:background="@color/gray_line"
+                android:textColor="@color/blue_salesforce"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/labelCurrency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Currency"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editCurrency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                />
+
+            <TextView
+                android:id="@+id/labelDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Description"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                />
+
+            <TextView
+                android:id="@+id/labelSymbol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Symbol"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editSymbol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

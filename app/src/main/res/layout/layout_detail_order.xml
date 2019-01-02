@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_sidebar_menu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        />
+
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/layoutGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <TextView
+                    android:text="Harga (Rp)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"/>
+
+
+
+                <EditText
+                    android:id="@+id/textHargaBarang"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_round_white"
+                    android:padding="8dp"
+                    android:hint="36300"
+                    android:layout_marginRight="8dp"
+                    android:inputType="number"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <TextView
+                    android:text="Jumlah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"/>
+                <EditText
+                    android:id="@+id/textQtyBarang"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_round_white"
+                    android:padding="8dp"
+                    android:layout_marginRight="8dp"
+                    android:inputType="number"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                >
+                <TextView
+                    android:text="Diskon (%)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"/>
+                <EditText
+                    android:id="@+id/textDiskon"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_round_white"
+                    android:padding="8dp"
+                    android:layout_marginRight="8dp"
+                    android:inputType="number"
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/layoutGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        >
+
+        <Button
+            android:id="@+id/buttonBatal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BATAL"
+            android:background="@drawable/bg_rectangle_button_red"
+            android:textColor="@color/white"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            />
+
+        <Button
+            android:id="@+id/buttonHapus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="HAPUS"
+            android:background="@drawable/bg_rectangle_blue_light"
+            android:textColor="@color/white"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            />
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SIMPAN"
+            android:background="@drawable/bg_rectangle_button_green"
+            android:textColor="@color/white"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

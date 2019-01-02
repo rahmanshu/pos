@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    >
+
+
+    <RelativeLayout
+        android:layout_below="@+id/layoutUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/back_salesforce"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        >
+
+        <EditText
+            android:id="@+id/searchHeaderSidebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round_white"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:padding="8dp"
+            android:drawableRight="@mipmap/ic_kaca_pembesar"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="Search"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutUsername"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <FrameLayout
+            android:id="@+id/thumbImageLayout"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:padding="8dp">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_user_home"/>
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_toRightOf="@id/thumbImageLayout"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textUsernameProfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_color_salesforce"
+                android:text="Gabriel Joseno"
+                android:textSize="14sp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:layout_below="@+id/textUsernameProfil"
+                android:id="@+id/textEmailProfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_highlight"
+                android:text="rahmanshu7@gmail.com"
+                android:textSize="14sp"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

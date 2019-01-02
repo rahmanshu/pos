@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "435231896770",
+    "firebase_url": "https://linkeat-041089.firebaseio.com",
+    "project_id": "linkeat-041089",
+    "storage_bucket": "linkeat-041089.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435231896770:android:931773cce13a40de",
+        "android_client_info": {
+          "package_name": "com.trimitrasis.finosapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435231896770-05lrg8qfht0kmdfepkuo0p524c683rve.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trimitrasis.finosapps",
+            "certificate_hash": "ef437c804d46bc8c28b9e040248c781f8c57b1b9"
+          }
+        },
+        {
+          "client_id": "435231896770-b919tvft01tu35jvq97cijj3f6us75ft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBuuPp2SqyHM0phQMuiHJFEOvALYOvLfA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "435231896770-b919tvft01tu35jvq97cijj3f6us75ft.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

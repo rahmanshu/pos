@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_sidebar_menu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/laySetIp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set IP Address"
+                android:layout_weight="1"
+                android:padding="8dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_round_white"
+                android:padding="8dp"
+                android:hint="127.0.0.1"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/lay1"
+        android:layout_below="@+id/laySetIp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_medium"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/lay1"
+        android:id="@+id/layAktifkanPrinter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:id="@+id/labelPulangPergi"
+                android:text="Printer Struk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:text="Aktifkan printer struk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <Switch
+            android:id="@+id/switchPulangPergi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/lay2"
+        android:layout_below="@+id/layAktifkanPrinter"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_medium"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/hubungkanPrinter"
+        android:layout_below="@+id/layAktifkanPrinter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:text="Hubungkan printer struk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:text="Belum terhubung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_below="@+id/hubungkanPrinter"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_medium"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/layoutCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="BILL"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/album_title"
+                android:textStyle="bold"
+                android:id="@+id/textKassa" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_below="@+id/layoutCost"
+        android:id="@+id/lineCust"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_highlight"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineCust"
+        android:layout_above="@+id/lineBayar"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+
+    <View
+        android:id="@+id/lineBayar"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_highlight"
+        android:layout_above="@+id/layoutDiscountItem"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/layoutPpn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/layoutSubTotal"
+        android:padding="4dp"
+        >
+
+        <TextView
+            android:id="@+id/labelTax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tax %"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_marginLeft="4dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp."
+            />
+
+        <TextView
+            android:id="@+id/textPpnTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="right"
+            android:layout_weight="1.1"
+            android:textSize="16sp"
+            android:layout_marginRight="4dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutSubTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/layoutTotal"
+        android:padding="4dp"
+        >
+
+        <TextView
+            android:id="@+id/labelSubTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sub Total"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_marginLeft="4dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp."
+            />
+
+        <TextView
+            android:id="@+id/textSubTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="right"
+            android:layout_weight="1.1"
+            android:textSize="16sp"
+            android:layout_marginRight="4dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/layoutGroup"
+        android:padding="4dp"
+        android:layout_marginBottom="8dp"
+        >
+
+        <TextView
+            android:id="@+id/labelTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="4dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp."
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/textTotalBayar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="right"
+            android:layout_weight="1.1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginRight="4dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/layoutBayar"
+        >
+
+        <Button
+            android:id="@+id/btnCancelSales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DELETE"
+            android:background="@drawable/bg_rectangle_button_green"
+            android:textColor="@color/white"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBayar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:id="@+id/btnBayar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BAYAR"
+            android:background="@drawable/bg_rectangle_blue_light"
+            android:textColor="@color/white"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_alignParentBottom="true"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDiscountItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:layout_above="@+id/layoutPpn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/labelDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discount Item"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_marginLeft="4dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp."
+            />
+
+        <TextView
+            android:id="@+id/textDiscountItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="right"
+            android:layout_weight="1.1"
+            android:textSize="16sp"
+            android:layout_marginRight="4dp"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

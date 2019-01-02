@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/menuStartOfDay"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_button_highlight"
+            android:gravity="center_horizontal|center_vertical">
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/selector_menu_start_of_day"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="@dimen/padding_home_menu_button"
+                android:layout_marginLeft="@dimen/padding_home_menu_button"
+                android:layout_marginRight="@dimen/padding_home_menu_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxWidth="50dp"
+                android:maxHeight="50dp"
+                android:scaleType="centerInside"
+                android:id="@+id/imageView3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Of Day"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="5dp"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_medium"/>
+        <LinearLayout
+            android:id="@+id/menuStartOfShift"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg_button_highlight"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:src="@drawable/selector_menu_start_of_shift"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="@dimen/padding_home_menu_button"
+                android:layout_marginLeft="@dimen/padding_home_menu_button"
+                android:layout_marginRight="@dimen/padding_home_menu_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxWidth="50dp"
+                android:maxHeight="50dp"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Of Shift"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="5dp"
+                />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_medium"/>
+        <LinearLayout
+            android:id="@+id/menuEndOfShift"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg_button_highlight"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:src="@drawable/selector_menu_end_of_shift"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="@dimen/padding_home_menu_button"
+                android:layout_marginLeft="@dimen/padding_home_menu_button"
+                android:layout_marginRight="@dimen/padding_home_menu_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxWidth="50dp"
+                android:maxHeight="50dp"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End Of Shift"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_medium"/>
+
+    <LinearLayout
+        android:id="@+id/middleLayout"
+        android:layout_weight="1"
+        android:layout_below="@id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/menuEndOfDay"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg_button_highlight"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:src="@drawable/selector_menu_end_of_day"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="@dimen/padding_home_menu_button"
+                android:layout_marginLeft="@dimen/padding_home_menu_button"
+                android:layout_marginRight="@dimen/padding_home_menu_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxWidth="50dp"
+                android:maxHeight="50dp"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End Of Day"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="5dp"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_medium"/>
+        <LinearLayout
+            android:id="@+id/menuPointOfSales"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg_button_highlight"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:src="@drawable/selector_menu_point_of_sale"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="@dimen/padding_home_menu_button"
+                android:layout_marginLeft="@dimen/padding_home_menu_button"
+                android:layout_marginRight="@dimen/padding_home_menu_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxWidth="50dp"
+                android:maxHeight="50dp"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Point Of Sale"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="5dp"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_medium"/>
+        <LinearLayout
+            android:id="@+id/menuHistorySales"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg_button_highlight"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:src="@drawable/selector_menu_history_sales"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="@dimen/padding_home_menu_button"
+                android:layout_marginLeft="@dimen/padding_home_menu_button"
+                android:layout_marginRight="@dimen/padding_home_menu_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxWidth="50dp"
+                android:maxHeight="50dp"
+                android:scaleType="centerInside"
+                android:id="@+id/imageView2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sync Transaksi"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="5dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_medium"/>
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_weight="1"
+        android:layout_below="@id/middleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+
+        <!--notif-->
+        <LinearLayout
+            android:id="@+id/menuHoldSales"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg_button_highlight"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:src="@drawable/selector_menu_hold_sales"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="@dimen/padding_home_menu_button"
+                android:layout_marginLeft="@dimen/padding_home_menu_button"
+                android:layout_marginRight="@dimen/padding_home_menu_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxWidth="50dp"
+                android:maxHeight="50dp"
+                android:scaleType="centerInside"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hold Sales"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="5dp"
+                />
+
+
+        </LinearLayout>
+        <!--end notif-->
+
+
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_medium"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg_button_highlight"
+            android:clickable="true"
+            android:id="@+id/menuSinkron"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:src="@drawable/selector_menu_sinkronisasi"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="@dimen/padding_home_menu_button"
+                android:layout_marginLeft="@dimen/padding_home_menu_button"
+                android:layout_marginRight="@dimen/padding_home_menu_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxWidth="50dp"
+                android:maxHeight="50dp"
+                android:scaleType="centerInside"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sync Master Data"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="5dp"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_medium"/>
+        <LinearLayout
+            android:id="@+id/menuPengaturan"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg_button_highlight"
+            android:clickable="true"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:src="@drawable/selector_menu_pengaturan"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="@dimen/padding_home_menu_button"
+                android:layout_marginLeft="@dimen/padding_home_menu_button"
+                android:layout_marginRight="@dimen/padding_home_menu_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxWidth="50dp"
+                android:maxHeight="50dp"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Setting"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

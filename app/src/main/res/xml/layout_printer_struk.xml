@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <SwitchPreference android:title="Printer Struk"
+        android:defaultValue="false"
+        android:summary="Aktifkan printer Struk"
+        android:key="switchPrinterStruk" />
+
+
+    <EditTextPreference android:title="Nama Printer"
+        android:id="@+id/editTextNamaPrinterStruk"
+        android:summary="Dapur"
+        android:key="namaPrinter"
+        android:clickable="true"
+        >
+    </EditTextPreference>
+
+    <!--
+    <ListPreference
+        android:key="listPrinterStruk"
+        android:entries="@array/printBluetooth"
+        android:summary="Belum Terhubung"
+        android:entryValues="@array/printBluetoothValues"
+        android:title="Hubungkan Printer Struk" />
+        -->
+
+</PreferenceScreen>

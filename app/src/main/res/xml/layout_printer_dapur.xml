@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <SwitchPreference android:title="Printer dapur"
+        android:defaultValue="false"
+        android:summary="Aktifkan printer dapur"
+        android:key="switchPrinterDapur" />
+
+
+    <EditTextPreference android:title="Nama Printer"
+        android:id="@+id/editTextNamaPrinter1"
+        android:summary="Dapur"
+        android:key="namaPrinter"
+        android:clickable="true"
+        >
+    </EditTextPreference>
+
+<!--
+    <ListPreference
+        android:key="listPrinterDapur"
+        android:entries="@array/printBluetooth"
+        android:summary="Belum Terhubung"
+        android:entryValues="@array/printBluetoothValues"
+        android:title="Hubungkan Printer Dapur" />
+        -->
+
+
+
+    <SwitchPreference android:title="Printer Bar"
+        android:defaultValue="false"
+        android:summary="Aktifkan printer Bar"
+        android:key="switchPrintBar"
+        />
+
+
+    <EditTextPreference android:title="Nama Printer"
+        android:id="@+id/editTextNamaPrinterBar"
+        android:summary="Bar"
+        android:key="namaPrinterBar"
+        android:clickable="true"
+        >
+    </EditTextPreference>
+
+    <!--
+    <ListPreference
+        android:key="listPrinterBar"
+        android:entries="@array/printBluetooth"
+        android:summary="Belum Terhubung"
+        android:entryValues="@array/printBluetoothValues"
+        android:title="Hubungkan Printer Bar" />
+-->
+
+
+</PreferenceScreen>

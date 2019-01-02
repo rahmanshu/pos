@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/ic_screeen_login_handset"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        >
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_header_logo_finos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <AutoCompleteTextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white_soft"
+            android:textColor="@color/white"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+
+            android:padding="16dp"
+            android:hint="Username">
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <!--
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:padding="16dp"
+            android:textColorHint="@color/white_soft"
+            android:textColor="@color/white"
+            android:hint="Username"
+            android:maxLines="1"
+            android:theme="@style/EditTextStyleLogin"
+            />
+            -->
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="16dp"
+            android:textColorHint="@color/white_soft"
+            android:textColor="@color/white"
+            android:hint="Password"
+            android:maxLines="1"
+            android:inputType="textPassword"
+
+            />
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_button_login"
+            android:background="@drawable/bg_round_button_blue"
+            android:textColor="@color/white"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_button_register"
+            android:background="@drawable/bg_round_button_blue"
+            android:textColor="@color/white"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textCopyright"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="2017 www.finos.id, inc. All right reserved."
+        android:gravity="center"
+        android:textSize="14sp"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>

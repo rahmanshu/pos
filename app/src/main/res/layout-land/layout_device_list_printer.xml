@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_sidebar_menu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    
+    <TextView android:id="@+id/title_paired_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Paired Devices"
+        android:visibility="gone"
+        android:background="#666"
+        android:textColor="#fff"
+        android:paddingLeft="5dp"
+        android:padding="8dp"
+        />
+
+    <ListView
+        android:id="@+id/paired_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView android:id="@+id/title_new_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Other Available Devices"
+        android:visibility="gone"
+        android:background="#666"
+        android:textColor="#fff"
+        android:paddingLeft="5dp"
+        android:padding="8dp"
+        />
+
+    <ListView
+        android:id="@+id/new_devices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      />
+
+    <Button
+        android:id="@+id/button_scan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/bg_round_button_blue"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/white"
+        android:text="SCAN FOR DEVICE" />
+
+</LinearLayout>

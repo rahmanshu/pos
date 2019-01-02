@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@color/white"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            >
+
+
+            <TextView
+                android:id="@+id/textNamaBarang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Barang"
+                android:padding="8dp"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                />
+
+
+
+                <EditText
+                    android:id="@+id/editPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:background="@drawable/bg_round_white"
+                    android:padding="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:inputType="number"
+                    />
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                >
+
+
+                <Button
+                    android:id="@+id/kurangQty"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_button_circle"
+                    android:textColor="@color/white"
+                    android:text="-"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/numberText"
+                    android:textSize="21sp"
+                    android:text="123"
+                    android:layout_weight="1"
+                    android:layout_toRightOf="@+id/kurangQty"
+                    android:layout_toLeftOf="@+id/tambahQty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:background="@drawable/bg_round_white"
+                    android:inputType="number"
+                    />
+
+                <Button
+                    android:id="@+id/tambahQty"
+                    android:clickable="true"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/bg_button_circle"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/white"
+                    android:text="+"
+                    android:textSize="20dp"
+                    />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/editNote"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:background="@drawable/bg_round_white"
+                android:lines="5"
+                android:minLines="5"
+                android:scrollHorizontally="false"
+                android:scrollbars="vertical"
+                android:hint="note"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cancel"
+                    android:background="@drawable/bg_rectangle_blue_light"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="4dp"
+                    />
+
+                <Button
+                    android:id="@+id/buttonSetQty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="OK"
+                    android:background="@drawable/bg_rectangle_button_green"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="4dp"
+                    />
+
+                <Button
+                    android:id="@+id/buttonDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Delete"
+                    android:background="@drawable/bg_rectangle_button_red"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="4dp"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

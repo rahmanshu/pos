@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+
+    <LinearLayout
+        android:id="@+id/rowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:clickable="true">
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp"
+            android:layout_marginLeft="2dp"
+            >
+
+            <TextView
+                android:id="@+id/textNamaBarang"
+                android:text="Samsung J2"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:maxLines="1"
+                />
+
+            <TextView
+                android:id="@+id/labelDiskon"
+                android:text="Diskon 10%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="8dp"
+                android:maxLines="1"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/textQty"
+                android:text="X"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                />
+
+            <TextView
+                android:id="@+id/textEmpty"
+                android:text=""
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1.4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp"
+            android:layout_marginRight="2dp"
+            >
+
+
+            <TextView
+                android:id="@+id/textHarga"
+                android:text="1.450.000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="right"
+                android:maxLines="1"
+                />
+
+
+            <TextView
+                android:id="@+id/textDiskon"
+                android:text="1.450.00"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:maxLines="1"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--diskon-->
+
+    <!--end-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_medium"/>
+
+
+</LinearLayout>

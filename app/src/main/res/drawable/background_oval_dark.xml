@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:xmnls="http://schemas.android.com/apk/res/android"
+    xmnls:shape="oval">
+    <gradient xmnls:startColor="@color/gray_highlight"
+        xmnls:endColor="@color/gray_highlight"/>
+    <stroke xmnls:color="@color/white"
+        xmnls:width="1.5dp"/>
+</shape>

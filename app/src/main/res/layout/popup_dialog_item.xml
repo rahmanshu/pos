@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg_round_white"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            >
+
+
+            <include
+                android:id="@+id/toolbar_popup"
+                layout="@layout/toolbar_menu_popup"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_alignParentTop="true"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_medium"
+                />
+
+
+            <!--test-->
+
+            <TextView
+                android:id="@+id/labelId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="ID"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                />
+
+            <TextView
+                android:id="@+id/labelShortDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Short Description"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editShortDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/labelLongDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Long Description"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editLongDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/labelBaseUom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Base Uom"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editBaseUom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                />
+
+
+            <TextView
+                android:id="@+id/labelItemGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Item Group"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editItemGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/labelHierarchy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Item Hierarchy"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editItemHierarchy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                />
+
+            <TextView
+                android:id="@+id/labelAccountClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Account Class"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editAccountClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                />
+
+
+            <TextView
+                android:id="@+id/labelItemConvertion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Item Convertion"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editItemConvertion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                />
+
+            <TextView
+                android:id="@+id/labelCreateBy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Create By"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editCreateBy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                android:inputType="number"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/labelCreateDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Create Date"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editCreateDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                android:inputType="number"
+                />
+
+
+            <TextView
+                android:id="@+id/labelCreateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Create Time"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editCreateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp"
+                android:inputType="number"
+                />
+
+            <!--end-->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

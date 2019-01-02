@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg_round_white"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            >
+
+
+            <include
+                android:id="@+id/toolbar_popup"
+                layout="@layout/toolbar_menu_popup"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_alignParentTop="true"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_medium"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_line"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textColor="@color/blue_salesforce"
+                    android:text="Update Data Customer"
+                    />
+
+            </LinearLayout>
+
+
+            <!--test-->
+
+            <TextView
+                android:id="@+id/labelNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Customer Name"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editNamaCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                />
+
+            <TextView
+                android:id="@+id/labelPhone1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Phone1"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editPhone1Customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/labelPhone2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Phone2"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editPhone2Customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/labelAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Address"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editAddressCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/labelFax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Fax"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editFaxCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/labelEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Email"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editEmailCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                />
+
+            <TextView
+                android:id="@+id/labelRecon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Recon Account"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editReconCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                />
+
+
+            <TextView
+                android:id="@+id/labelCurrency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Currency"
+                android:layout_marginLeft="8dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_border_style"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                >
+
+                <Spinner
+                    android:id="@+id/spinnerCurrency"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/labelCreditLimit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Credit Limit"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editCreditLimit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                android:inputType="number"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/labelPaymentTerm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Payment Term"
+                android:layout_marginLeft="8dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_border_style"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                >
+
+                <Spinner
+                    android:id="@+id/spinnerPaymentTerm"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/labelTaxGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Tax Group"
+                android:layout_marginLeft="8dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_border_style"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                >
+
+                <Spinner
+                    android:id="@+id/spinnerTaxGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/labelPkp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="PKP"
+                    android:layout_marginLeft="16dp"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    />
+
+
+                <CheckBox
+                    android:id="@+id/checkPkpCustomer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    />
+
+            </LinearLayout>
+
+            <!--end-->
+
+
+            <!--
+            edit branch
+            -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/btnAddBranch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Add Branch"
+                    android:background="@drawable/bg_round_button_blue"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    />
+
+
+                <Button
+                    android:id="@+id/btnClearBranch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Add Branch"
+                    android:background="@drawable/bg_round_button_blue"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="8dp"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/contentViewBranchItem"
+                android:padding="4dp"
+                >
+
+            </LinearLayout>
+
+
+            <!--end-->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

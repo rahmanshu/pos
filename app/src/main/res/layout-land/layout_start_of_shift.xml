@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_sidebar_menu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:id="@+id/labelUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Kasir"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="8dp"
+                    />
+
+                <EditText
+                    android:id="@+id/editIdKasir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/editext_modified_color"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:padding="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/labelIdMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Id Device"
+                    android:layout_marginLeft="8dp"
+                    />
+
+                <EditText
+                    android:id="@+id/editIdMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/editext_modified_color"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:padding="20dp"
+                    android:layout_marginBottom="16dp"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@color/gray_line"
+            >
+
+
+            <TextView
+                android:id="@+id/labelLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Location"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                />
+
+
+            <EditText
+                android:id="@+id/textLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="20dp"
+                />
+
+            <TextView
+                android:id="@+id/labelSetoranAwal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="Setoran Awal"
+
+                />
+
+            <EditText
+                android:id="@+id/editSetotanAwal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="20dp"
+                android:inputType="number"
+                android:focusable="true"
+                />
+
+            <Button
+                android:id="@+id/btnStartEndShift"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/button_start_end_shift"
+                android:background="@drawable/bg_round_button_blue"
+                android:textColor="@color/white"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

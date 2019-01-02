@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_sidebar_menu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        />
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <!--kolom1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@color/font_color_salesforce"
+                >
+
+                <TextView
+                    android:id="@+id/labelTotalBayar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Bayar"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:padding="16dp"
+                    android:layout_marginLeft="8dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/textTotalBayar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 0"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:padding="16dp"
+                    android:layout_marginRight="8dp"
+                    />
+
+            </LinearLayout>
+            <!--end kolom1-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="METODE PEMBAYARAN"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginBottom="16dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/labelAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="NON TUNAI"
+                    android:layout_marginLeft="8dp"
+                    android:textStyle="bold"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/shape_border_style"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="8dp"
+                    >
+
+                    <Spinner
+                        android:id="@+id/spinnerMetodeBayar"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/shape_border_style"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="8dp"
+                    >
+
+                    <Spinner
+                        android:id="@+id/spinnerBank"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/textNomerKartu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@drawable/bg_round_white"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:hint="Input Nomer Kartu"
+                    android:inputType="number"
+                    android:layout_marginBottom="8dp"
+                    />
+
+                <EditText
+                    android:id="@+id/textNominalNonTunai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@drawable/bg_round_white"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:hint="Input Nominal"
+                    android:inputType="number"
+                    android:layout_marginBottom="8dp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textStyle="bold"
+                        />
+
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="DONASI"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="16dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Donasi"
+                        android:padding="16dp"
+                        android:background="@drawable/bg_round_white"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:inputType="number"
+                        android:visibility="invisible"
+                        />
+
+                    <EditText
+                        android:id="@+id/textNominalDonasi"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="0"
+                        android:padding="16dp"
+                        android:background="@drawable/bg_round_white"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        />
+
+                </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="TUNAI"
+                android:layout_marginLeft="8dp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/textNominalTunai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_round_white"
+                android:padding="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:hint="0"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="KEMBALIAN"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/textNominalKembalian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_round_white"
+                android:padding="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:hint="0"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="PPN"
+                android:layout_marginLeft="8dp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_border_style"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                >
+
+                <Spinner
+                    android:id="@+id/spinnerPpn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnBayar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bayar"
+                android:background="@drawable/bg_rectangle_blue_light"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                >
+
+                <EditText
+                    android:id="@+id/textMemberId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Member ID"
+                    android:padding="16dp"
+                    android:background="@drawable/bg_round_white"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="16dp"
+                    />
+
+
+                <Button
+                    android:id="@+id/btnCekMember"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cek Member"
+                    android:background="@drawable/bg_rectangle_blue_light"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="16dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/textDataMember"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Point User"
+                    android:padding="16dp"
+                    android:background="@drawable/bg_round_white"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textDataPoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="0"
+                    android:padding="16dp"
+                    android:background="@drawable/bg_round_white"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="4dp"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textNominalPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:background="@drawable/bg_round_white"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Nominal Point"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/textInputNominalPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:background="@drawable/bg_round_white"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Input Nominal"
+                android:inputType="numberDecimal"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

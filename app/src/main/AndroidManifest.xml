@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.trimitrasis.finosapps">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_new"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DesignDemo">
+
+        <activity
+            android:name=".FirstActivity_"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".MainActivity_"
+            />
+
+        <activity
+            android:name=".Views.InvoiceReceiptView.InvoiceReceiptActivity_"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name=".Views.SalesQuotationView.SalesQuotationActivity_"
+            />
+
+        <activity
+            android:name=".Views.SalesOrderView.SalesOrderActivity_"
+            />
+
+        <activity
+            android:name=".Views.DeliveryOrderView.DeliveryOrderActivity_"
+            />
+
+        <activity
+            android:name=".Views.InvoiceReceiptView.InputItemView.BillingItemActivity_"
+            />
+
+        <activity
+            android:name=".Views.MasterDataView.MasterCustomerActivity_"
+            />
+
+
+        <activity
+            android:name=".Views.PosView.HomePointOfSaleActivity_"
+            />
+
+
+        <activity
+            android:name=".Views.MasterDataView.MainCustomerActivity_"
+            />
+
+        <activity
+            android:name=".Views.MasterDataView.MasterVendorActivity_"
+            />
+
+        <activity
+            android:name=".Views.UserProfileView.UserProfileActivity_"
+            />
+
+        <activity
+            android:name=".Views.MasterDataView.MasterCurrencyActivity_"
+            />
+
+
+        <activity
+            android:name=".Views.MasterDataView.MainCurrencyActivity_"
+            />
+
+        <activity
+            android:name=".Views.MasterDataView.MainVendorActivity_"
+            />
+
+        <activity
+            android:name=".Views.MasterDataView.MainItemActivity_"
+            />
+
+
+        <activity
+            android:name=".Views.PosView.CreateOrderActivity_"
+            android:screenOrientation="landscape"
+            android:launchMode= "singleInstance"
+            />
+
+        <activity
+            android:name=".Views.SplitBillView.SplitBillMenuActivity_"
+            android:screenOrientation="landscape"
+            android:launchMode= "singleInstance"
+            />
+
+        <activity
+            android:name=".Views.PosView.StartOfDayActivity_"
+            />
+
+        <activity
+            android:name=".Views.PrintView.PrintBillActivity_"
+            />
+
+        <activity
+            android:name=".Views.PrintView.PrintDapurActivity_"
+            />
+
+
+        <activity
+            android:name=".Views.PosView.StartOfShiftNewActivity_"
+            />
+
+        <activity
+            android:name=".Views.PosView.EndOfShiftActivity_"
+            />
+
+        <activity
+            android:name=".Views.PosView.EndOfDayActivity_"
+            />
+
+        <activity
+            android:name=".Views.PosView.BayarActivity_"
+            />
+
+        <activity
+            android:name=".Views.PosView.RingkasanOrderActivity_"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name=".Views.PosView.DetailOrderActivity_"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name=".Views.PosView.HoldPenjualanActivity_"
+            />
+
+        <activity
+            android:name=".Views.PosView.DetailHoldPenjualanActivity_"
+            />
+
+        <activity
+            android:name=".Views.PosView.SplitBillActivity_"
+            />
+
+
+        <activity android:name=".Views.SettingView.SettingActivity_"
+            />
+
+        <activity
+            android:name=".Views.PrintView.DeviceListStrukActivity_"
+            />
+
+        <activity
+            android:name=".Views.PrintView.DeviceListDapurActivity_"
+            />
+
+
+        <activity
+            android:name=".Views.PrintView.ConnectPrinterStrukActivity_"
+            />
+
+        <activity
+            android:name=".Views.PrintView.ConnectPrinterDapurActivity_"
+            />
+
+        <activity
+            android:name=".Views.PrintView.PrintStartOfShiftActivity_"
+            />
+
+        <activity
+            android:name=".Views.PrintView.PrintPointOfSalesActivity_"
+            />
+
+        <activity
+            android:name=".Views.PrintView.PrintEndOfShiftActivity_"
+            />
+
+        <activity
+            android:name=".Views.PrintView.PrintEndOfDayActivity_"
+            />
+
+        <activity
+            android:name=".Views.PosView.RiwayatPenjualanActivity_"
+            />
+
+        <activity
+            android:name=".Views.HistoryView.HistoryActivity_"
+            />
+
+        <activity
+            android:name=".Views.LoginView.LoginActivity_"
+            />
+
+        <!--new-->
+
+        <provider
+            android:name=".Views.ContentProvider.StatusEosProvider"
+            android:authorities="com.trimitrasis.finosapps.ContentProvider.StatusEosProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <provider
+            android:name=".Views.ContentProvider.EndOfShiftProvider"
+            android:authorities="com.trimitrasis.finosapps.ContentProvider.EndOfShiftProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <provider
+            android:name=".Views.ContentProvider.PajakProvider"
+            android:authorities="com.trimitrasis.finosapps.ContentProvider.PajakProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <provider
+            android:name=".Views.ContentProvider.TaxProvider"
+            android:authorities="com.trimitrasis.finosapps.ContentProvider.TaxProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <provider
+            android:name=".Views.ContentProvider.TaxGroupProvider"
+            android:authorities="com.trimitrasis.finosapps.ContentProvider.TaxGroupProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+
+        <provider
+            android:name=".Views.ContentProvider.ItemProvider"
+            android:authorities="com.trimitrasis.finosapps.ContentProvider.ItemProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+
+        <provider
+            android:name=".Views.ContentProvider.CategoryProductProvider"
+            android:authorities="com.trimitrasis.finosapps.ContentProvider.CategoryProduct"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <provider
+            android:name=".Views.ContentProvider.BomProvider"
+            android:authorities="com.trimitrasis.finosapps.ContentProvider.BomProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <provider
+            android:name=".Views.ContentProvider.HoldSalesProvider"
+            android:authorities="com.trimitrasis.finosapps.Views.ContentProvider.HoldSalesProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <provider
+            android:name=".Views.ContentProvider.HeaderHoldSalesProvider"
+            android:authorities="com.trimitrasis.finosapps.Views.ContentProvider.HeaderHoldSalesProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <provider
+            android:name=".Views.ContentProvider.DetailHoldSalesProvider"
+            android:authorities="com.trimitrasis.finosapps.Views.ContentProvider.DetailHoldSalesProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <provider
+            android:name=".Views.ContentProvider.PromosiProvider"
+            android:authorities="com.trimitrasis.finosapps.ContentProvider.PromosiProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <provider
+            android:name=".Views.ContentProvider.PromosiBarangProvider"
+            android:authorities="com.trimitrasis.finosapps.Views.ContentProvider.PromosiBarangProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <provider
+            android:name=".Views.ContentProvider.PromosiHadiahProvider"
+            android:authorities="com.trimitrasis.finosapps.Views.ContentProvider.PromosiHadiahProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <provider
+            android:name=".Views.ContentProvider.PromosiPenjualanProvider"
+            android:authorities="com.trimitrasis.finosapps.Views.ContentProvider.PromosiPenjualanProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <provider
+            android:name=".Views.ContentProvider.PromoJualProvider"
+            android:authorities="com.trimitrasis.finosapps.Views.ContentProvider.PromoJualProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <provider
+            android:name=".Views.ContentProvider.TransJualProvider"
+            android:authorities="com.trimitrasis.finosapps.ContentProvider.TransJualProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <provider
+            android:name=".Views.ContentProvider.TransJualVoidProvider"
+            android:authorities="com.trimitrasis.finosapps.ContentProvider.TransJualVoidProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <provider
+            android:name=".Views.ContentProvider.TransJualDetailProvider"
+            android:authorities="com.trimitrasis.finosapps.ContentProvider.TransJualDetailProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <provider
+            android:name=".Views.ContentProvider.TransJualDetailVoidProvider"
+            android:authorities="com.trimitrasis.finosapps.ContentProvider.TransJualDetailVoidProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <provider
+            android:name=".Views.ContentProvider.TransJualBayarProvider"
+            android:authorities="com.trimitrasis.finosapps.ContentProvider.TransJualBayarProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <provider
+            android:name=".Views.ContentProvider.LoginProvider"
+            android:authorities="com.trimitrasis.finosapps.Views.ContentProvider.LoginProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <provider
+            android:name=".Views.ContentProvider.StrukNoteProvider"
+            android:authorities="com.trimitrasis.finosapps.Views.ContentProvider.StrukNoteProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <provider
+            android:name=".Views.ContentProvider.TransPenjualanProvider"
+            android:authorities="com.trimitrasis.finosapps.ContentProvider.TransPenjualanProvider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+
+        <receiver android:name=".Views.BroadcastReceiver.ReceiverSincronItem">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+
+        <receiver android:name=".Views.BroadcastReceiver.ReceiverEndOfShift">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".Views.ServiceProvider.DownloadService"/>
+
+    </application>
+
+</manifest>

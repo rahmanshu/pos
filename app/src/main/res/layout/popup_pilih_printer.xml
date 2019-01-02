@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@color/white"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cetak"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:background="@color/gray_highlight"
+                />
+
+            <TextView
+                android:id="@+id/textCetakStruk"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cetak Struk"
+                android:padding="20dp"
+                android:drawablePadding="4dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:background="@color/gray_highlight"
+                />
+
+            <TextView
+                android:id="@+id/textCetakDapur"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cetak Dapur"
+                android:padding="20dp"
+                android:drawablePadding="4dp"
+                />
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg_round_white"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            >
+
+
+            <include
+                android:id="@+id/toolbar_popup"
+                layout="@layout/toolbar_menu_popup_new"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_alignParentTop="true"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_medium"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_line"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textColor="@color/blue_salesforce"
+                    android:text="Update Branch"
+                    />
+
+            </LinearLayout>
+
+            <!--test-->
+
+            <TextView
+                android:id="@+id/labelNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Name"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editNamaBranch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                />
+
+            <TextView
+                android:id="@+id/labelAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Address"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editAddressBranch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/labelPhone1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Phone1"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editPhone1Branch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/labelPhone2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Phone2"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editPhone2Branch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/labelFax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Fax"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editFaxBranch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:padding="12dp"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/labelEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Email"
+                android:layout_marginLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/editEmailBranch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_modified_color"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp"
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/btnDeleteBranch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Delete"
+                    android:background="@drawable/bg_round_button_blue"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    />
+
+
+                <Button
+                    android:id="@+id/btnSaveUpdateBranch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Save"
+                    android:background="@drawable/bg_round_button_blue"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="8dp"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
